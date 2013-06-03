@@ -1,0 +1,462 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Кулябовка</title>
+<link rel="shortcut icon" href="images/ico.png" />
+<style type="text/css">
+body {
+  font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #4E5869;
+	background-image:url(/images/fon.jpg);
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+a img { 
+	border: none;
+}
+
+a:link {
+	color:#414958;
+	text-decoration: underline;
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+
+.container {
+	width: 95%;
+	max-width: 1260px
+	min-width: 780px;
+	background-color: #FFF;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #6F7D94;
+}
+.sidebar1 {
+	float: left;
+	width: 30%;
+	background-color: #93A5C4;
+	padding-bottom: 10px;
+	font-size: 10pt;
+}
+.content {
+	padding: 10px 0;
+	width: 70%;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 20%;
+	height: 100%
+	background-color: #93A5C4;
+	padding: 10px 0;
+}
+
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px;
+}
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #666;
+	margin-bottom: 15px;
+}
+ul.nav li {
+	border-bottom: 1px solid #666;
+}
+ul.nav a, ul.nav a:visited {
+	padding: 5px 5px 5px 15px;
+	display: block;
+	text-decoration: none;
+	background-color: #8090AB;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background-color: #6F7D94;
+	color: #FFF;
+}
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+	position: relative;
+	clear: both;
+}
+.fltrt { 
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.text0 {
+	text-indent: 20pt;
+	font: 100%/1.4 Monotype Corsiva;
+	font-size: 20pt;
+	text-align: center;
+}
+.text1 {
+	text-indent: 20pt;
+	font: 100%/1.4 Arial;
+	font-size: 13pt;
+	text-align: justify;
+}
+.text2 {
+	text-indent: 20pt;
+	font: 100%/1.4 Arial;
+	font-size: 8pt;
+	text-align: right;
+}
+.advert {
+	text-indent: 20pt;
+	font: 100%/1.4 Arial;
+	font-size: 11pt;
+	text-align: right;
+}
+.stih {
+	font-size: 8pt;
+	float: left;
+	padding: 10px 0;
+}
+.leftimg {
+	float:left;
+	margin: 10px 10px 10px 10px;
+}
+.rightimg {
+	float:right;
+	margin: 10px 10px 10px 10px;
+}
+.video1 {
+	background:#93A5C4;
+	border-radius:10px;
+	width: 100%;
+	height: 40px;
+	font-size:20px;
+	color:#fff;
+	
+}
+.video2 {
+	background:#CCC;
+	border-radius:10px;
+	width: 95%;
+	border: 1px solid;
+	border-color:#93A5C4;
+}
+.video3 {
+	text-align:left;
+	font-family:"MS Serif", "New York", serif;
+	font-size:15px;
+	background-image:url(/images/fon_videoinfo.png);
+	background-repeat:repeat-x;
+	border-radius: 10px;
+	width: 95%;
+	margin:0 2% 0 2%;
+	padding:0px 0px 0px 10px;
+}
+.desc {
+	width: 95%;
+	background:#FF9;
+	border-radius:10px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+	text-align:center;
+	border: solid 1px blue;
+}
+.comments {
+	margin:0 3% 0 3%;
+	width: 95%;
+	background:#FF9;
+	border-radius:10px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+	font-align:left;
+	float:inherit;
+}
+.comments_all {
+	background:rgb(204, 191, 171);
+	width: 96%;
+	border: solid 1px blue;
+	border-radius:10px;
+	margin:0 2% 0 2%;
+}
+.comments_time {
+	background:#FFF;
+	width:20%;
+	margin:0 0 0 78%;
+	text-indent: 20pt;
+	font: 100%/1.4 Arial;
+	font-size: 8pt;
+	text-align: right;
+	border-radius:10px;
+}
+.videofiltr {
+	background-image:url(/images/fon_top.gif);
+	background-repeat:repeat-x;
+	border-radius: 10px;
+	width: 96%;
+	margin:0 2% 0 2%;
+}
+.gbd1 {
+	background-image:url(/images/gbd1.jpg);
+	background-repeat:repeat-x repeat-y;
+	border-radius: 10px;
+	margin:0 2% 0 2%;
+	font-family:"Courier New", Courier, monospace;
+	font-size:20px;
+	text-align: center;
+	color:#FFF;
+}
+.gbd2 {
+	margin:0 20% 0 20%;
+	background-image:url(/images/gbd1.jpg);
+	background-repeat:repeat-x repeat-y;
+	border-radius: 20px;
+	text-align: center;
+	color:#000;
+	font-family:"Courier New", Courier, monospace;
+	font-size:16px;
+	border: solid 1px blue;
+}
+.gbd3 {
+	margin:0 2% 0 2%;
+	background-image:url(/images/gbd1.jpg);
+	background-repeat:repeat-x repeat-y;
+	border-radius: 20px;
+	text-align: center;
+	color:#000;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+	border: solid 1px;
+}
+.gbd_1c {
+	margin:1% 1% 1% 1%;
+	background-image:url(/images/gbd_1c.jpg);
+	background-repeat:repeat-x repeat-y;
+	border-radius: 20px;
+	text-align:justify;
+	color:#000;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+	border: solid 1px blue;
+}
+.gbddate {
+	margin:0 2% 3pt 70%;
+	background-image:url(/images/fon_videoinfo.png);
+	border-radius: 8px;
+	text-align: center;
+	color:#009;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+}
+.gbdname {
+	margin:3pt 60% 0 2%;
+	background-image:url(/images/fon_videoinfo.png);
+	border-radius: 8px;
+	text-align: center;
+	color:#009;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<img src="/images/logo/logo_.png" alt="Кулябовка" width="100%" height="65%" style="background-color: #8090AB;"/>
+</div>
+<div class="sidebar1">
+    <ul class="nav">
+      <li><a href="/index.php">Главная</a></li>
+      <li><a href="/history.php">История</a></li>
+      <li><a href="/uncos.php">Новости</a></li>
+      <li><a href="/gallery/index.php">Фотогалерея</a></li>
+      <li><a href="/video.php">Видеотека</a></li>
+      <li><a href="/school.php">Школа</a></li>
+      <li><a href="/prepod.php">Учителя</a></li>
+      <li><a href="/dostoprim.php">Красная книга</a></li>
+      <li><a href="/veteran.php">Ветераны</a></li>
+      <li><a href="/forum/index.php">Форум</a></li>
+      <li><a href="/guestbook.php">Гостевая</a></li>
+      <li><a href="/link.php">Ссылки</a></li>
+      <li><a href="/thanks.php">Спасибо</a></li>
+      <li><a href="/location.php">Мы на карте</a></li>
+      <li><a href="/sup_money.php">Поддержать проект</a></li>
+      <li><a href="/feedback.php">Обратная связь</a></li>
+    </ul>
+<!--Случайное объявление -->
+<div class="text0">Случайное объявление:</div>
+<table border="1" bgcolor="#CCCCCC" width="95%" align="center">
+<tr>
+<td><div class='advert'>Для того чтобы разместить свое объявление на сайте, свяжитесь с администратором через Форму обратной связи.</div></td></tr><tr><td><div class='advert'>Дорогие друзья, если у вас есть какой-либо материал касаемый тематики сайта, то вы можете поделиться им с нами, отправив его на электроный адрес - kulyabovka@gmail.com</div></td></tr>
+</table>
+<br />
+<hr />
+<!--Календарик -->
+<center><table width="200" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="180" height="140" cellpadding="0" cellspacing="0" border="0" align="center" style="margin-top:5px; margin-bottom:10px; ">
+<tr><td colspan="7" align="center"><font color="blue"><b>2013 г -  Июнь</b></font></td></tr><tr><td width="22" align="center"><font color="#FFFFFF"><b>Пн</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FFFFFF"><b>Вт</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FFFFFF"><b>Ср</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FFFFFF"><b>Чт</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FFFFFF"><b>Пт</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FF0000"><b>Сб</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FF0000"><b>Вс</b><height="1" width="22" border="0" /></font></td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td width="22" align="center"><font color="#FF0000"><b>1</b></font></td><td width="22" align="center"><font color="#FF0000"><b>2</b></font></td></tr>
+<tr><td width="22" bgcolor="#2f2f2f" align="center"><b><font color="#ffffff">3</font></b></td><td width="22" align="center"><font color="#000000"><b>4</b></font></td><td width="22" align="center"><font color="#000000"><b>5</b></font></td><td width="22" align="center"><font color="#000000"><b>6</b></font></td><td width="22" align="center"><font color="#000000"><b>7</b></font></td><td width="22" align="center"><font color="#FF0000"><b>8</b></font></td><td width="22" align="center"><font color="#FF0000"><b>9</b></font></td></tr>
+<tr><td width="22" align="center"><font color="#000000"><b>10</b></font></td><td width="22" align="center"><font color="#000000"><b>11</b></font></td><td width="22" align="center"><font color="#000000"><b>12</b></font></td><td width="22" align="center"><font color="#000000"><b>13</b></font></td><td width="22" align="center"><font color="#000000"><b>14</b></font></td><td width="22" align="center"><font color="#FF0000"><b>15</b></font></td><td width="22" align="center"><font color="#FF0000"><b>16</b></font></td></tr>
+<tr><td width="22" align="center"><font color="#000000"><b>17</b></font></td><td width="22" align="center"><font color="#000000"><b>18</b></font></td><td width="22" align="center"><font color="#000000"><b>19</b></font></td><td width="22" align="center"><font color="#000000"><b>20</b></font></td><td width="22" align="center"><font color="#000000"><b>21</b></font></td><td width="22" align="center"><font color="#FF0000"><b>22</b></font></td><td width="22" align="center"><font color="#FF0000"><b>23</b></font></td></tr>
+<tr><td width="22" align="center"><font color="#000000"><b>24</b></font></td><td width="22" align="center"><font color="#000000"><b>25</b></font></td><td width="22" align="center"><font color="#000000"><b>26</b></font></td><td width="22" align="center"><font color="#000000"><b>27</b></font></td><td width="22" align="center"><font color="#000000"><b>28</b></font></td><td width="22" align="center"><font color="#FF0000"><b>29</b></font></td><td width="22" align="center"><font color="#FF0000"><b>30</b></font></td></table>
+</td>
+</tr>
+</table></center>
+<br />
+<hr />
+<!--кнопка -->
+<center>
+<a href="http://xn--80abd4acdw1bzh.xn--p1ai/" title="Едем все в Кулябовку!"> 
+<img src="images/knopka.gif" border="0" width="96" height="56"
+alt="Едем все в Кулябовку!"></a>
+<br /><br />
+<div class="text1"><p>Вы можете разместить нашу кнопку у себя на сайте. Для этого скопируйте и вставьте следующий код к себе на страничку:</p></div>
+<center><img src="/images/down.png" width="92" height="92" alt="Текст снизу" /></center>
+<textarea cols="37" rows="10" readonly="readonly" wrap="on">
+<!-- КулябовкА.РФ -->
+<a href="http://xn--80abd4acdw1bzh.xn--p1ai/"
+title="Едем все в Кулябовку!">
+<img src="http://xn--80abd4acdw1bzh.xn--p1ai/images/knopka.gif" border="0" width="96" height="56"
+alt="Едем все в Кулябовку!"></a>
+<!-- КулябовкА.РФ -->
+</textarea>
+</center>
+<br />
+<hr />
+<!--QR-код-->
+<center><strong>QR-код, ссылка на наш сайт:</strong></center>
+<br />
+<center><img src="images/qr.png" width="50%" alt="КулябовкА.РФ"></center>
+<br /></div>
+<div class="content">
+<div align="center">
+| <em><a href="uncos.php">Новости сайта</a></em> |
+<em><a href="uncos_pos.php">Новости села</a></em> |
+<hr>
+</div><div class="gbd3"><div class="gbd_1c"><div class='text0'><br>Новые видеоролики.</br></div><div class='text1'><br><p>Видеоролик повествующий о нашем, Кулябовском фермере - Чекмареве А. Г. <a href="play_video.php?id=12">Посмотреть.</a> За видео благодарим Глушкова Вячеслава!</p></br></div><div class='text2'><br><p>3 июня 2013 год&nbsp;Администратор сайта</p></br></div></div><div class="gbd_1c"><div class='text0'><br>Новые видеоролики.</br></div><div class='text1'><br><p>В Видеотеку добавлена новая видеозапись. <a href="play_video.php?id=11">Небольшой ролик</a> демонстрирующий красоты нашей районной достопримечательности - реки Вороны.</p></br></div><div class='text2'><br><p>3 июня 2013 год&nbsp;Администратор сайта</p></br></div></div><div class="gbd_1c"><div class='text0'><br>Новый альбом в Фотогалерее</br></div><div class='text1'><br><p>В Фотогалерее появился новый фотоальбом. Будет интересно, <a href="gallery/index.php/banya">загляните.</a></p></br></div><div class='text2'><br><p>3 июня 2013 год&nbsp;Администратор сайта</p></br></div></div><div class="gbd_1c"><div class='text0'><br>Новый альбом в Фотогалерее</br></div><div class='text1'><br><p>В  <a href="gallery/index.php">Фотогалерею</a> добавлен новый альбом <a href="gallery/index.php/vorona">Ворона</a>. Небольшая прогулка на моторке по реке вылилась вот в такой фоторепортаж ))) Прекрасные пейзажи, зелень вокруг, песчаные пляжи, голубое небо...</p></br></div><div class='text2'><br><p>3 июня 2013 год&nbsp;Администратор сайта</p></br></div></div><div class="gbd_1c"><div class='text0'><br>Возможность добавления смайликов</br></div><div class='text1'><br><p>Сегодня на сайте появилась возможность добавлять в комментариях к видео и гостевой книге множество смайлов. Это разбавит сухой текст и позволит более ярко выразить свои эмоции. Кстати говоря, с недавнего времени, форма отправки комментариев и сообщений в гостевую книгу обзавелась защитой от спамботов. Впрочем обновления коснулись и самой гостевой книги, мы перешли на собственную, самописную. Так что милости просим к нам на сайт! </p></br></div><div class='text2'><br><p>3 июня 2013 год&nbsp;Администратор сайта</p></br></div></div><div class="gbd_1c"><div class='text0'><br>Новая видеозапись</br></div><div class='text1'><br><p>В Видеотеку добавлена новая видеозапись <a href="http://www.кулябовка.рф/play_video.php?id=10">Юбилей Кулябовской школы</a>. За предоставленное видео спасибо Глушкову Вячеславу!</p></br></div><div class='text2'><br><p>18 мая 2013 год.&nbsp;Администратор сайта</p></br></div></div><div class="gbd_1c"><div class='text0'><br>Комментарии к видео</br></div><div class='text1'><br><p>Добавлена возможность комментировать видеозаписи.</p></br></div><div class='text2'><br><p>17 мая 2013 год.&nbsp;Администратор сайта</p></br></div></div><div class="gbd_1c"><div class='text0'><br>Обновлен фотоальбом в галерее.</br></div><div class='text1'><br><p>Добавлены новые фотографии в альбом <a href="gallery/index.php/ksosh60">Кулябовской СОШ - 60 лет</a> Фотографии предоставлены Чекмаревой Зоей Николаевной, за что ей отдельное СПАСИБО!</p></br></div><div class='text2'><br><p>16 мая 2013 год.&nbsp;Администратор сайта</p></br></div></div><p><center><strong>1</strong> &nbsp;<a href="uncos.php?page=2">2</a> &nbsp;<a href="uncos.php?page=3">3</a> &nbsp;<a href="uncos.php?page=4">4</a> &nbsp;</center></p></div><center>
+<br />
+<div class="text0">Поделиться:</div>
+<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+<div class="yashare-auto-init" align="center" data-yashareL10n="ru"
+ data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus,surfingbird"></div>  
+<br />
+</center> <!-- end .content --></div>
+  <div class="footer">
+    <p align="center">393586 Россия, Тамбовская область, Мучкапский район, село Кулябовка. </p>
+    <p align="center">2013 г.</p>
+<div align="right">
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t14.6;r"+
+escape(top.document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число просмотров за 24"+
+" часа, посетителей за 24 часа и за сегодня' "+
+"border='0' width='88' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
+
+<!-- Yandex.Metrika informer -->
+<a href="http://metrika.yandex.ru/stat/?id=20642200&amp;from=informer"
+target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/20642200/3_0_79A0C1FF_79A0C1FF_1_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter20642200 = new Ya.Metrika({id:20642200,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/20642200" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<a href="javascript:;" 
+onclick="window.open('/stat/stat.php','stat','height=180,width=300').focus()" 
+title="Статистика посещений">
+<img border="0" src="/stat/index.php" width="88" height="31" alt="Кол-во посещений" /></a>
+
+<script type="text/javascript" src="orphus/orphus.js"></script>
+<a href="http://orphus.ru" id="orphus" target="_blank"><img alt="Система Orphus" src="/orphus/orphus.gif" border="0" width="257" height="48" /></a>
+</div>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+<!--Начало кода кнопки НАВЕРХ -->
+<script language="JavaScript" type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+<script language="JavaScript" type="text/javascript">
+$(function() {
+	$.fn.scrollToTop = function() {
+		$(this).hide().removeAttr("href");
+		if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+		var scrollDiv = $(this);
+		$(window).scroll(function() {
+			if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+			else $(scrollDiv).fadeIn("slow")
+			});
+		$(this).click(function() {
+		$("html, body").animate({scrollTop: 0}, "slow")
+			})
+		}
+	});
+$(function() {
+$("#Go_Top").scrollToTop();
+});
+</script>
+<a style='position: fixed; bottom: 25px; right: 1px; cursor:pointer; display:none;' href='#' id='Go_Top'><img src="/images/up.png" alt="Наверх" title="Наверх"> </a>
+<!--Конец кода кнопки НАВЕРХ -->
+</body>
+</html>
+
