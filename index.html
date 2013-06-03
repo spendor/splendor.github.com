@@ -1,320 +1,485 @@
 
-<HTML>
-<HEAD>
-<TITLE>Занимательный сайт для школьников 5+</TITLE>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
-<meta name= "Description" content ="Занимательный сайт для  школьников ">
-<meta name= "Keywords" content="школьный сайт, сайт для школьников, школьники младших  средних классов, советы для школьников ">
-<link rel="shortcut icon" href="http://5plys.ru/favicon.ico"/>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Кулябовка</title>
+<link rel="shortcut icon" href="images/ico.png" />
+<style type="text/css">
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #4E5869;
+	background-image:url(/images/fon.jpg);
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+a img { 
+	border: none;
+}
 
-</HEAD>
-<BODY  
-BGCOLOR=#FFFFFF topMargin="0">
+a:link {
+	color:#414958;
+	text-decoration: underline;
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+
+.container {
+	width: 95%;
+	max-width: 1260px
+	min-width: 780px;
+	background-color: #FFF;
+	margin: 0 auto;
+}
+
+.header {
+	background-color: #6F7D94;
+}
+.sidebar1 {
+	float: left;
+	width: 30%;
+	background-color: #93A5C4;
+	padding-bottom: 10px;
+	font-size: 10pt;
+}
+.content {
+	padding: 10px 0;
+	width: 70%;
+	float: left;
+}
+.sidebar2 {
+	float: left;
+	width: 20%;
+	height: 100%
+	background-color: #93A5C4;
+	padding: 10px 0;
+}
+
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px;
+}
+ul.nav {
+	list-style: none;
+	border-top: 1px solid #666;
+	margin-bottom: 15px;
+}
+ul.nav li {
+	border-bottom: 1px solid #666;
+}
+ul.nav a, ul.nav a:visited {
+	padding: 5px 5px 5px 15px;
+	display: block;
+	text-decoration: none;
+	background-color: #8090AB;
+	color: #000;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { 
+	background-color: #6F7D94;
+	color: #FFF;
+}
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+	position: relative;
+	clear: both;
+}
+.fltrt { 
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat {
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.text0 {
+	text-indent: 20pt;
+	font: 100%/1.4 Monotype Corsiva;
+	font-size: 20pt;
+	text-align: center;
+}
+.text1 {
+	text-indent: 20pt;
+	font: 100%/1.4 Arial;
+	font-size: 13pt;
+	text-align: justify;
+}
+.text2 {
+	text-indent: 20pt;
+	font: 100%/1.4 Arial;
+	font-size: 8pt;
+	text-align: right;
+}
+.advert {
+	text-indent: 20pt;
+	font: 100%/1.4 Arial;
+	font-size: 11pt;
+	text-align: right;
+}
+.stih {
+	font-size: 8pt;
+	float: left;
+	padding: 10px 0;
+}
+.leftimg {
+	float:left;
+	margin: 10px 10px 10px 10px;
+}
+.rightimg {
+	float:right;
+	margin: 10px 10px 10px 10px;
+}
+.video1 {
+	background:#93A5C4;
+	border-radius:10px;
+	width: 100%;
+	height: 40px;
+	font-size:20px;
+	color:#fff;
+	
+}
+.video2 {
+	background:#CCC;
+	border-radius:10px;
+	width: 95%;
+	border: 1px solid;
+	border-color:#93A5C4;
+}
+.video3 {
+	text-align:left;
+	font-family:"MS Serif", "New York", serif;
+	font-size:15px;
+	background-image:url(/images/fon_videoinfo.png);
+	background-repeat:repeat-x;
+	border-radius: 10px;
+	width: 95%;
+	margin:0 2% 0 2%;
+	padding:0px 0px 0px 10px;
+}
+.desc {
+	width: 95%;
+	background:#FF9;
+	border-radius:10px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+	text-align:center;
+	border: solid 1px blue;
+}
+.comments {
+	margin:0 3% 0 3%;
+	width: 95%;
+	background:#FF9;
+	border-radius:10px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:16px;
+	font-align:left;
+	float:inherit;
+}
+.comments_all {
+	background:rgb(204, 191, 171);
+	width: 96%;
+	border: solid 1px blue;
+	border-radius:10px;
+	margin:0 2% 0 2%;
+}
+.comments_time {
+	background:#FFF;
+	width:20%;
+	margin:0 0 0 78%;
+	text-indent: 20pt;
+	font: 100%/1.4 Arial;
+	font-size: 8pt;
+	text-align: right;
+	border-radius:10px;
+}
+.videofiltr {
+	background-image:url(/images/fon_top.gif);
+	background-repeat:repeat-x;
+	border-radius: 10px;
+	width: 96%;
+	margin:0 2% 0 2%;
+}
+.gbd1 {
+	background-image:url(/images/gbd1.jpg);
+	background-repeat:repeat-x repeat-y;
+	border-radius: 10px;
+	margin:0 2% 0 2%;
+	font-family:"Courier New", Courier, monospace;
+	font-size:20px;
+	text-align: center;
+	color:#FFF;
+}
+.gbd2 {
+	margin:0 20% 0 20%;
+	background-image:url(/images/gbd1.jpg);
+	background-repeat:repeat-x repeat-y;
+	border-radius: 20px;
+	text-align: center;
+	color:#000;
+	font-family:"Courier New", Courier, monospace;
+	font-size:16px;
+	border: solid 1px blue;
+}
+.gbd3 {
+	margin:0 2% 0 2%;
+	background-image:url(/images/gbd1.jpg);
+	background-repeat:repeat-x repeat-y;
+	border-radius: 20px;
+	text-align: center;
+	color:#000;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+	border: solid 1px;
+}
+.gbd_1c {
+	margin:1% 1% 1% 1%;
+	background-image:url(/images/gbd_1c.jpg);
+	background-repeat:repeat-x repeat-y;
+	border-radius: 20px;
+	text-align:justify;
+	color:#000;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+	border: solid 1px blue;
+}
+.gbddate {
+	margin:0 2% 3pt 70%;
+	background-image:url(/images/fon_videoinfo.png);
+	border-radius: 8px;
+	text-align: center;
+	color:#009;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+}
+.gbdname {
+	margin:3pt 60% 0 2%;
+	background-image:url(/images/fon_videoinfo.png);
+	border-radius: 8px;
+	text-align: center;
+	color:#009;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<img src="/images/logo/logo_.png" alt="Кулябовка" width="100%" height="65%" style="background-color: #8090AB;"/>
+</div>
+<div class="sidebar1">
+    <ul class="nav">
+      <li><a href="/index.php">Главная</a></li>
+      <li><a href="/history.php">История</a></li>
+      <li><a href="/uncos.php">Новости</a></li>
+      <li><a href="/gallery/index.php">Фотогалерея</a></li>
+      <li><a href="/video.php">Видеотека</a></li>
+      <li><a href="/school.php">Школа</a></li>
+      <li><a href="/prepod.php">Учителя</a></li>
+      <li><a href="/dostoprim.php">Красная книга</a></li>
+      <li><a href="/veteran.php">Ветераны</a></li>
+      <li><a href="/forum/index.php">Форум</a></li>
+      <li><a href="/guestbook.php">Гостевая</a></li>
+      <li><a href="/link.php">Ссылки</a></li>
+      <li><a href="/thanks.php">Спасибо</a></li>
+      <li><a href="/location.php">Мы на карте</a></li>
+      <li><a href="/sup_money.php">Поддержать проект</a></li>
+      <li><a href="/feedback.php">Обратная связь</a></li>
+    </ul>
+
+<!--Календарик -->
+<center><table width="200" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="180" height="140" cellpadding="0" cellspacing="0" border="0" align="center" style="margin-top:5px; margin-bottom:10px; ">
+<tr><td colspan="7" align="center"><font color="blue"><b>2013 г -  Июнь</b></font></td></tr><tr><td width="22" align="center"><font color="#FFFFFF"><b>Пн</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FFFFFF"><b>Вт</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FFFFFF"><b>Ср</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FFFFFF"><b>Чт</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FFFFFF"><b>Пт</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FF0000"><b>Сб</b><height="1" width="22" border="0" /></font></td>
+<td width="22" align="center"><font color="#FF0000"><b>Вс</b><height="1" width="22" border="0" /></font></td></tr>
+<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td width="22" align="center"><font color="#FF0000"><b>1</b></font></td><td width="22" align="center"><font color="#FF0000"><b>2</b></font></td></tr>
+<tr><td width="22" bgcolor="#2f2f2f" align="center"><b><font color="#ffffff">3</font></b></td><td width="22" align="center"><font color="#000000"><b>4</b></font></td><td width="22" align="center"><font color="#000000"><b>5</b></font></td><td width="22" align="center"><font color="#000000"><b>6</b></font></td><td width="22" align="center"><font color="#000000"><b>7</b></font></td><td width="22" align="center"><font color="#FF0000"><b>8</b></font></td><td width="22" align="center"><font color="#FF0000"><b>9</b></font></td></tr>
+<tr><td width="22" align="center"><font color="#000000"><b>10</b></font></td><td width="22" align="center"><font color="#000000"><b>11</b></font></td><td width="22" align="center"><font color="#000000"><b>12</b></font></td><td width="22" align="center"><font color="#000000"><b>13</b></font></td><td width="22" align="center"><font color="#000000"><b>14</b></font></td><td width="22" align="center"><font color="#FF0000"><b>15</b></font></td><td width="22" align="center"><font color="#FF0000"><b>16</b></font></td></tr>
+<tr><td width="22" align="center"><font color="#000000"><b>17</b></font></td><td width="22" align="center"><font color="#000000"><b>18</b></font></td><td width="22" align="center"><font color="#000000"><b>19</b></font></td><td width="22" align="center"><font color="#000000"><b>20</b></font></td><td width="22" align="center"><font color="#000000"><b>21</b></font></td><td width="22" align="center"><font color="#FF0000"><b>22</b></font></td><td width="22" align="center"><font color="#FF0000"><b>23</b></font></td></tr>
+<tr><td width="22" align="center"><font color="#000000"><b>24</b></font></td><td width="22" align="center"><font color="#000000"><b>25</b></font></td><td width="22" align="center"><font color="#000000"><b>26</b></font></td><td width="22" align="center"><font color="#000000"><b>27</b></font></td><td width="22" align="center"><font color="#000000"><b>28</b></font></td><td width="22" align="center"><font color="#FF0000"><b>29</b></font></td><td width="22" align="center"><font color="#FF0000"><b>30</b></font></td></table>
+</td>
+</tr>
+</table></center>
+<br />
+<hr />
+<!--кнопка -->
 <center>
-  <TABLE WIDTH="100%" cellpadding="0" cellspacing="0">
-    <TR>
-      <TD align="center" background="images/bg.gif"> 
-        <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
-          <TR>
-          <TD ROWSPAN="5"  WIDTH="17" background="images/bg_left.gif"> </TD>
-		    <TD bgcolor="#99FFCC"> <IMG SRC="images/bg1.jpg" WIDTH=271 HEIGHT=85></TD>
-		    <TD bgcolor="#99FFCC"> <IMG SRC="images/bg2.jpg" WIDTH=290 HEIGHT=85></TD>
-		    <TD bgcolor="#CCCCCC"> <IMG SRC="images/bg3.jpg" WIDTH=189 HEIGHT=85></TD>
-					
-            <TD ROWSPAN="5"  WIDTH="17" background="images/bg_right.gif" > </TD>
-	</TR>
-	<TR>
-		    <TD bgcolor="#99FFCC"> <IMG SRC="images/bg4.jpg" WIDTH=271 HEIGHT=57></TD>
-		    <TD bgcolor="#99FFCC"> <IMG SRC="images/bg5.jpg" WIDTH=290 HEIGHT=57></TD>
-		    <TD bgcolor="#CCCCCC"> <IMG SRC="images/bg6.jpg" WIDTH=189 HEIGHT=57></TD>
-	</TR>
-	<TR > 
-            <TD COLSPAN=3 WIDTH=750 HEIGHT=29 background="images/bg12.jpg"> 
-              <p> <font color="#CC0000" face="Verdana, Arial, Helvetica, sans-serif" size="2"> 
-                <a href ="index.html"> Главная </a></font> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="images/bg11.jpg" width="3" height="29" align="absmiddle"> 
-                <font color="#000066"><a href ="sadachi.htm"> Задачи</a></font></font> 
-                <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="images/bg11.jpg" width="3" height="29" align="absmiddle"> 
-                <font color="#000066"><a href ="test.htm"> Тесты </a></font></font> 
-                <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="images/bg11.jpg" width="3" height="29" align="absmiddle"> 
-                <font color="#000066"><a href ="goroskop.htm">Гороскоп </a></font></font> 
-                <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="images/bg11.jpg" width="3" height="29" align="absmiddle"> 
-                <font color="#000066"><a href ="anekdoti.htm"> Анекдоты </a></font></font> 
-                <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="images/bg11.jpg" width="3" height="29" align="absmiddle"> 
-                <font color="#000066"><a href ="sagadki.htm"> Загадки </a></font></font> 
-                <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="images/bg11.jpg" width="3" height="29" align="absmiddle"> 
-                <font color="#000066"><a href ="soveti.htm">Полезные советы </a><img src="images/bg11.jpg" width="3" height="29" align="absmiddle"> 
-                <a href ="sotik.htm">Мой телефон</a><img src="images/bg11.jpg" width="3" height="29" align="absmiddle"> 
-                <a href ="dvd.htm">DVD</a></font></font> <font face="Verdana, Arial, Helvetica, sans-serif" size="2"><img src="images/bg11.jpg" width="3" height="29" align="absmiddle"> 
-                <font color="#000066"><a href ="forum.htm">Форум </a></font></font></p>
-      </TD>
-	</TR>
-	      <TR valign="top"> 
-            <TD COLSPAN=2 WIDTH=561 HEIGHT=369 background="images/5.jpg" bgcolor="#FFFFFF"> 
-              <div align="center"> 
-                <p> 
-                  <SCRIPT type="text/javascript">
-   var begun_auto_colors = new Array();
-   var begun_auto_fonts_size = new Array();
-   begun_auto_pad = 91846844; // идентификатор площадки
-   begun_auto_limit = 3; // число объявлений выводимых на площадке
-   begun_auto_width = 550; // ширина блока объявлений.
-   begun_auto_colors[0] = '#4682B4'; // цвет ссылки объявлений
-   begun_auto_colors[1] = '#708090'; // цвет текста объявления
-   begun_auto_colors[2] = '#4682B4'; // цвет домена объявления
-   begun_auto_colors[3] = '#E0FFFF'; // цвет фона блока объявлений
-   begun_auto_fonts_size[0] = '9pt'; // р-мер шрифта ссылки объявлений
-   begun_auto_fonts_size[1] = '9pt'; // р-мер шрифта текста объявления
-   begun_auto_fonts_size[2] = '9pt'; // р-мер шрифта домена объявления
-   begun_auto_fonts_size[3] = '9pt'; // р-мер шрифта заглушки
-   begun_block_type = 'Horizontal'; // тип блока
-</SCRIPT>
-                  <SCRIPT src="http://autocontext.begun.ru/autocontext.js" type="text/javascript">
-</SCRIPT>
-                  <!-- begin of Top100 code -->
-                  <a href="http://top100.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?1356052" alt="Rambler's Top100" width="1" height="1" border="0" /></a> 
-                  <!-- end of Top100 code -->
-                </p>
-              </div>
-              <div align="center"> 
-                <p><font color="#000000"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">Привет!!! 
-                  Если ты <font color="#CC0000">ШКОЛЬНИК</font>, то тебе <font color="#CC0000">СЮДА</font>!</font></font><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif"><br>
-                  </font> </p>
-              </div>
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">Этот 
-                сайт для учеников младших и средних классов.<br>
-                ЗДЕСЬ тебе не придеться скучать.</font><font face="Verdana, Arial, Helvetica, sans-serif"><br>
-                <font color="#666699">А главное, ты с пользой проведешь свой досуг!</font></font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">-Как 
-                стать отличником?</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">-Как 
-                завоевать уважение одноклассников?</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">-Как 
-                завести новых друзей?</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">-Как 
-                устроить классную вечеринку?</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">-Как 
-                выбрать подарок?</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">-Как 
-                убедить родителей завести домашнего питомца и как ухаживать за 
-                ним?</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">Ответы 
-                на все эти вопросы ты найдешь на сайте <b>&quot;5+ точка ру&quot;</b>, 
-                в рубрике <a href ="soveti.htm">&quot;Полезные советы</a></font> 
-                &quot; 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">Ты 
-                научишься планировать свой день и не терять времени понапрасну.</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">А 
-                так же узнаешь как общаться с людьми и при этом не ссориться.</font> 
-              <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#666699">Ты 
-                наверно замечал, что с одними ребятами или девочками все в классе 
-                хотят дружить, а с другими - никто? И не важно, что скажем, у 
-                Маши плохой характер, и учится-то она не слишком хорошо, но в 
-                классе ее считают настоящей звездой. А Даша - во всем примерная 
-                девочка, на уроках получает &quot;пятерки&quot;, никогда ни с 
-                кем не ссорится, но на переменах всегда одиноко стоит у стенки, 
-                играть ее не зовут, да и за партой с ней никто сидеть не хочет. 
-                Почему так происходит, мы тоже постараемся разобраться.</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">А 
-                еще тебя ждут</font> <font color="#666699" face="Verdana, Arial, Helvetica, sans-serif"><i><font color="#CC0000"><a  href="test.htm">занимательные 
-                тесты</a></font></i> и <i><font color="#CC0000"><a  href="goroskop.htm">гороскоп</a></font></i>, 
-                которые помогут тебе лучше узнать себя и окружающих людей.</font> 
-              <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#666699">О 
-                дружбе, о том куда пойти, в какие игры играть, как стать настоящей 
-                заводилой, как стать желанным гостем на любой вечеринке ты также 
-                узнаешь на нашем сайте.</font> 
-              <p align="center"><font face="Verdana, Arial, Helvetica, sans-serif" color="#666699">А 
-                сможешь ли ты самостоятельно решить <i><font color="#CC0000"><a  href="sadachi.htm">логические 
-                задачи</a></font></i> и головоломки?</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">Здесь 
-                ты найдешь <font color="#CC0000"><i><a  href="anekdoti.htm">анекдоты</a></i></font><i>, 
-                <font color="#CC0000"> <a  href="sagadki.htm">загадки<font color="#666699">,</font></a></font></i> 
-                умные мысли великих людей, словом, этот сайт расскажет тебе о 
-                многом - в том числе о том, чему не учат в школе. Надеямся, что 
-                тебе понравится наш сайт и ты не раз зайдешь на любимые страницы.</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">УДАЧИ 
-                тебе ШКОЛЬНИК!!!</font> 
-              <p align="center"><font color="#666699" face="Verdana, Arial, Helvetica, sans-serif">Желаем 
-                тебе <b><font color="#CC0000">5+ </font></b>!!!</font> 
-              <p align="center"><img src="images/1str.jpg" width="220" height="227"> 
-              <blockquote>
-                <hr>
-              </blockquote>
-              <p align="center">
-                              </TD>
-	        <TD WIDTH=200 bgcolor="#FFFFCC"> 
-              <div align="center"> 
-                <p>&nbsp;
-                <p><font color="#666699"><font color="#000099"><a href ="karta_saita.htm"><font face="Verdana, Arial, Helvetica, sans-serif">Карта 
-                  сайта</font></a></font></font>
-                <p><a target="_blank" href="http://www.R-Money.ru/order.php?ssid=1448&msid=1">Диплом, 
-                  курсовые, контрольные на заказ.</a>
-                <p><a href="http://kinklub.com" title="Лучшие сайты Рунета">Детский каталог сайтов.</a><br>
-              </div>
-              <div align="center">
-<p>
-                  <script type="text/javascript"><!--
-google_ad_client = "pub-3087258622257735";
-/* 180x90, создано 08.03.08 */
-google_ad_slot = "3811328319";
-google_ad_width = 180;
-google_ad_height = 90;
-//-->
-</script>
-                  <script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-                </p>
-                <p>&nbsp;</p>
-              </div>
-			  <div align="center">
-                <p>
-                  <script type="text/javascript"><!--
-google_ad_client = "pub-3087258622257735";
-/* реклама */
-google_ad_slot = "6204640253";
-google_ad_width = 120;
-google_ad_height = 600;
-//-->
-</script>
-                  <script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-                </p>
-               
-				
-              </div>
-              <div align="center">
-<p>&nbsp;</p>
-                <p>&nbsp; 
-                  <!-- start Link.Ru -->
-                  <script language="JavaScript">
-// <!--
-var LinkRuRND = Math.round(Math.random() * 1000000000);
-document.write('<iframe src="http://link.link.ru/show?squareid=49897&showtype=110&output_style=1&shift_count=1&cat_id=90060&tar_id=1&sc=3&bg=FFFFFF&bc=FFFFFF&tc=D5EFFF&tt=525252&tu=0202FF&th=525252&bwidth=  200&bheight=300, вариант 3&r='+LinkRuRND+'&ref='+escape(document.referrer)+'&url='+escape(window.location.href)+'" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" width="  200" height="300"></iframe>');
-// -->
-</script>
-                  <noscript> <iframe src="http://link.link.ru/show?squareid=49897&showtype=110&output_style=1&shift_count=1&cat_id=90060&tar_id=1&sc=3&bg=FFFFFF&bc=FFFFFF&tc=D5EFFF&tt=525252&tu=0202FF&th=525252&bwidth=  200&bheight=300, вариант 3" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" width="  200" height="300"></iframe> 
-                  </noscript> 
-                  <!-- end Link.Ru -->
-                <p>&nbsp; 
-                  <!-- start Link.Ru -->
-                  <script language="JavaScript">
-// <!--
-var LinkRuRND = Math.round(Math.random() * 1000000000);
-document.write('<iframe src="http://link.link.ru/show?squareid=49897&showtype=171&output_style=1&shift_count=1&cat_id=90060&tar_id=1&sc=3&bg=FFFFFF&bc=FFFFFF&tc=D5EFFF&tt=525252&tu=0202FF&th=525252&bwidth=  136&bheight=186&r='+LinkRuRND+'&ref='+escape(document.referrer)+'&url='+escape(window.location.href)+'" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" width="  136" height="186"></iframe>');
-// -->
-</script>
-                  <noscript> <iframe src="http://link.link.ru/show?squareid=49897&showtype=171&output_style=1&shift_count=1&cat_id=90060&tar_id=1&sc=3&bg=FFFFFF&bc=FFFFFF&tc=D5EFFF&tt=525252&tu=0202FF&th=525252&bwidth=  136&bheight=186" frameborder="0" vspace="0" hspace="0" marginwidth="0" marginheight="0" scrolling="no" width="  136" height="186"></iframe> 
-                  </noscript> 
-                  <!-- end Link.Ru -->
-                <p>&nbsp; <a href="http://moneymaster.ru/?pupkin">Заработок в 
-                  интернете</a><br>
-                  <a href="http://moneymaster.ru/?tanya74" alt="заработок в интернете"><img src="http://moneymaster.ru/images/banner120x120-2.gif" width="120" height="120"></a> 
-                <p>&nbsp; 
-                                
-              </div>
-            </TD>
-	</TR>
-	      <TR> 
-            <TD COLSPAN=3 WIDTH=750 HEIGHT=61 background="images/bg12.jpg"> 
-              <p><font color="#003366"><i><font face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#666699"> 
-                </font></b></font></i></font><font color="#003366"><i><font face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#666699"> 
-                </font><font color="#003366"><i><font face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#666699">© 
-                5plys.ru-2008</font></b></font></i></font> <font color="#666699"> 
-                <script type="text/javascript"><!--
+<a href="http://xn--80abd4acdw1bzh.xn--p1ai/" title="Едем все в Кулябовку!"> 
+<img src="images/knopka.gif" border="0" width="96" height="56"
+alt="Едем все в Кулябовку!"></a>
+<br /><br />
+<div class="text1"><p>Вы можете разместить нашу кнопку у себя на сайте. Для этого скопируйте и вставьте следующий код к себе на страничку:</p></div>
+<center><img src="/images/down.png" width="92" height="92" alt="Текст снизу" /></center>
+<textarea cols="37" rows="10" readonly="readonly" wrap="on">
+<!-- КулябовкА.РФ -->
+<a href="http://xn--80abd4acdw1bzh.xn--p1ai/"
+title="Едем все в Кулябовку!">
+<img src="http://xn--80abd4acdw1bzh.xn--p1ai/images/knopka.gif" border="0" width="96" height="56"
+alt="Едем все в Кулябовку!"></a>
+<!-- КулябовкА.РФ -->
+</textarea>
+</center>
+<br />
+<hr />
+<!--QR-код-->
+<center><strong>QR-код, ссылка на наш сайт:</strong></center>
+<br />
+<center><img src="images/qr.png" width="50%" alt="КулябовкА.РФ"></center>
+<br /></div>
+<div class="content">
+<div class="gbd3">
+	<div class="gbd_1c">	<div class="text0">Добро пожаловать!</div>
+	<div class="text1"><p>Мы рады приветствовать вас на сайте, посвященному маленькой деревушке которая находится на стыке трех областей: Воронежской, Саратовской и Тамбовской. Этот ресурс, в основном, нацелен на тех людей, чья жизнь когда-либо была связана с селом Кулябовка, но мы рады любому гостю. Кто-то просто приезжает сюда отдохнуть, кто-то здесь родился и живет, но с уверенностью можно сказать, что у каждого в душе наша маленькая Родина оставляет глубокий отпечаток тепла в душе и на сердце.</p>
+
+<p>На страничках нашего сайта, вы можете окунуться в историю и воспоминания. Многим будет интересен раздел Фотогалерея и Видеотека. На Форуме вы можете встретиться со старыми друзьями и знакомыми, пообщаться и обсудить свои воспоминания и планы на будущее, оставить свой комментарий в Гостевой книге. Выпускникам Кулябовской СОШ, будет интересен раздел Школа. Здесь можно будет узнать информацию о преподавателях, которые когда-то работали или работают в данный момент. Посмотреть фотографии различных лет. Возможно кто-то найдёт себя )))</p>
+
+<p>Данный сайт находится на стадии разработки и пополнения. Если у вас есть интересная информация, фотографии различных лет, видеозаписи или вы готовы написать статью для сайта или просто предоставить какие-то материалы, свяжитесь с Администратором ресурса через Форму обратной связи. Мы будем рады любой помощи.</p></div>
+	</div>
+<hr width="95%" size="3" align="center" color="#FF3300" />
+<div class="video3" style="font-size:18px"><center>Последние события:</center></div>
+<hr width="95%" size="3" align="center" color="#FF3300" />
+<div class="gbd_1c">
+	
+	<div class="text0"><a href="uncos_pos.php">Новости села:</a></div>
+		<div class="desc" style="text-align:left; margin: 3pt 2% 0 2%; background-image:url(/images/fons.jpg);">
+	<div class="gbdname">Баня на ГЭСе.</div>
+	<p>Спешу многих обрадовать! Баня на ГЭСе уже стоит и ждет отдыхающих. Со стороны Кулябовки смыло последний песок, так что теперь, как и в прошлом году, банька стоит со стороны Андриановки. Ей там самое место. Берег оборудован для отдыха ))) Саму баню, в этом году капитально подремонтировали, и хотелось бы что бы она в таком состоянии простояла до конца сезона. Так что, господ отдыхающие, уважайте труд других, ведите себя хорошо и ни чего не ломайте, и мусор за собой, тоже не забывайте убирать. Чуть позже, в Фотогалерее можно будет посмотреть фотоотчет о поездке в баньку )))</p>
+	<div class="gbddate">3 июня 2013 год</div>
+	</div>
+		<div class="desc" style="text-align:left; margin: 3pt 2% 0 2%; background-image:url(/images/fons.jpg);">
+	<div class="gbdname">Разлив реки Ворона</div>
+	<p>Уровень воды в Вороне стремительно повышается, за сутки  в среднем прибывает около 40 сантиметров. На прибрежных улицах подмыты берега. До ближайшего к берегу дома осталось около десяти метров.</p>
+	<div class="gbddate">14 апреля 2013 г.</div>
+	</div>
+		<div class="desc" style="text-align:left; margin: 3pt 2% 0 2%; background-image:url(/images/fons.jpg);">
+	<div class="gbdname">Нашествие бобров в Кулябовке.</div>
+	<p>В связи с весенним разливом реки Ворона, на прибрежных улицах наблюдаются в большом количестве бобры и маленькие бобрята. Они не убегают когда к ним подходят люди, а иногда и атакуют своим хвостом. Можно с неожиданностью обнаружить этих зверюшек у себя под машиной, так как они совсем не бояться людей, а вот люди их побаиваются.</p>
+	<div class="gbddate">3 апреля 2013 г.</div>
+	</div>
+	<br />
+</div>
+
+
+</div>
+<center>
+<br />
+<div class="text0">Поделиться:</div>
+<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+<div class="yashare-auto-init" align="center" data-yashareL10n="ru"
+ data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus,surfingbird"></div>  
+<br />
+</center> <!-- end .content --></div>
+  <div class="footer">
+    <p align="center">393586 Россия, Тамбовская область, Мучкапский район, село Кулябовка. </p>
+    <p align="center">2013 г.</p>
+<div align="right">
+<!--LiveInternet counter<script type="text/javascript"><!--
 document.write("<a href='http://www.liveinternet.ru/click' "+
-"target=_blank><img src='http://counter.yadro.ru/hit?t21.10;r"+
-escape(document.referrer)+((typeof(screen)=="undefined")?"":
+"target=_blank><img src='//counter.yadro.ru/hit?t14.6;r"+
+escape(top.document.referrer)+((typeof(screen)=="undefined")?"":
 ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
 screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 ";"+Math.random()+
 "' alt='' title='LiveInternet: показано число просмотров за 24"+
 " часа, посетителей за 24 часа и за сегодня' "+
-"border=0 width=88 height=31><\/a>")//--></script>
-                <!--/LiveInternet-->
-                </font></b></font></i></font> 
-                <!-- begin of Top100 logo -->
-                <a href="http://top100.rambler.ru/top100/"><img src="http://top100-images.rambler.ru/top100/banner-88x31-rambler-blue3.gif" alt="Rambler's Top100" width="88" height="31" border="0" /></a> 
-                <!-- end of Top100 logo -->
-                <!--Start LogXP.ru code-->
-                <script language="JavaScript"><!--
-siteid = 151871;
+"border='0' width='88' height='31'><\/a>")
+</script><!--/LiveInternet-->
 
+<!-- Yandex.Metrika informer 
+<a href="http://metrika.yandex.ru/stat/?id=20642200&amp;from=informer"
+target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/20642200/3_0_79A0C1FF_79A0C1FF_1_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a>
+<!-- /Yandex.Metrika informer -->
 
-//--></script>
-                <script language="JavaScript"><!--
-js=1//--></script>
-                <script language="JavaScript1.1"><!--
-js=1.1//--></script>
-                <script language="JavaScript1.2"><!--
-js=1.2//--></script>
-                <script language="JavaScript1.3"><!--
-js=1.3//--></script>
-                <script language="JavaScript1.4"><!--
-js=1.4//--></script>
-                <script language="JavaScript1.5"><!--
-js=1.5//--></script>
-                <script language="JavaScript1.6"><!--
-js=1.6//--></script>
-                <script src="http://logxp.ru/counter.js" type="text/javascript">
+<!-- Yandex.Metrika counter 
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter20642200 = new Ya.Metrika({id:20642200,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
 </script>
-                <noscript> <a href="http://logxp.ru?siteid=151871" target=_top> 
-                <IMG src="http://logxp.ru/counter.php?siteid=151871&js=0" border=0></a> 
-                </noscript> 
-                <!--Rating@Mail.ru COUNTEr-->
-                <script language="JavaScript" type="text/javascript"><!--
-d=document;var a='';a+=';r='+escape(d.referrer)
-js=10//--></script>
-                <script language="JavaScript1.1" type="text/javascript"><!--
-a+=';j='+navigator.javaEnabled()
-js=11//--></script>
-                <script language="JavaScript1.2" type="text/javascript"><!--
-s=screen;a+=';s='+s.width+'*'+s.height
-a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
-js=12//--></script>
-                <script language="JavaScript1.3" type="text/javascript"><!--
-js=13//--></script>
-                <script language="JavaScript" type="text/javascript"><!--
-d.write('<a href="http://top.mail.ru/jump?from=1400563"'+
-' target=_top><img src="http://de.c5.b5.a1.top.list.ru/counter'+
-'?id=1400563;t=57;js='+js+a+';rand='+Math.random()+
-'" alt="Рейтинг@Mail.ru"'+' border=0 height=31 width=88/><\/a>')
-if(11<js)d.write('<'+'!-- ')//--></script>
-                <noscript><a
-target=_top href="http://top.mail.ru/jump?from=1400563"><img
-src="http://de.c5.b5.a1.top.list.ru/counter?js=na;id=1400563;t=57"
-border=0 height=31 width=88
-alt="Рейтинг@Mail.ru"/></a></noscript> 
-                <script language="JavaScript" type="text/javascript"><!--
-if(11<js)d.write('--'+'>')//--></script>
-                <a href="http://www.yandex.ru/cy?base=0&host=www.5plys.ru"> <img src="http://www.yandex.ru/cycounter?www.5plys.ru" width="88" height="31" alt="Яндекс цитирования" border="0"></a> 
-                <!-- НАЧАЛО ССЫЛКИ НА REFER.RU -->
-                <a href="http://www.refer.ru" target="_blank"> <img src="http://www.refer.ru/images/ref_buttons/729.gif" width="88" height="31" border="0" alt="Каталог сайтов - Refer.Ru"></a> 
-                <!-- КОНЕЦ ССЫЛКИ НА REFER.RU -->
-                <!-- Begin ProtoPlex TOP-100 -->
-                <a href="http://protoplex.ru" 
-onClick="this.href='http://protoplex.ru/top_show/257412.html'"> <img src=http://protoplex.ru/images/rating/knopa10.png
- alt="ProtoPlex: программы, форум, рейтинг, рефераты, рассылки!" width=88 height=31 border=0> 
-                </a> 
-                <!-- End ProtoPlex TOP-100 -->
-                
-                <!-- Top YandeG -->
-                <a href="http://yandeg.ru/" target="_blank" title="Статистика сайта. Показано: просмотров страниц за неделю, просмотров страниц сегодня, посетителей сегодня."
-onClick='img=new Image();img.src="http://yandeg.ru/count/sitecnt.php?id=48122";'> 
-                <img src="http://yandeg.ru/count/cnt.php?id=48122" width="88" height="31" border="0" alt="Рейтинг Сайтов YandeG"> 
-                </a> <a href="http://www.kinder.ru" target="_blank"><img src="http://kinder.ru/buttons/kb2.asp?id=0&bg=3" alt="Каталог детских ресурсов 
-             KINDER.RU" width="88" height="31" border="0"></a> 
-			 <a href="http://www.agakids.ru/"><img src="http://www.agakids.ru/banner/banner4.gif" alt="Детские сайты" border="0"></a>
-              <div style="position:absolute;left:-3072px;top:0"><noscript><a style="" target="_blank" href="http://pchela.4hs.ru/" title="" class="">pch 
-                </a><span id="ced0c1a84924c982a6403870c54b99ca"><a href="http://yandeg.ru/top/house.html">Рейтинг 
-                сайтов Домашний очаг</a></span> </noscript></div>
-              <!-- /Top YandeG -->
-             
-          </TR>
-</TABLE>
-</TD>
-</TR>
-</TABLE>
-</center>
-</BODY>
-</HTML>
+<noscript><div><img src="//mc.yandex.ru/watch/20642200" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<a href="javascript:;" 
+onclick="window.open('/stat/stat.php','stat','height=180,width=300').focus()" 
+title="Статистика посещений">
+<img border="0" src="/stat/index.php" width="88" height="31" alt="Кол-во посещений" /></a>
+
+<script type="text/javascript" src="orphus/orphus.js"></script>
+<a href="http://orphus.ru" id="orphus" target="_blank"><img alt="Система Orphus" src="/orphus/orphus.gif" border="0" width="257" height="48" /></a>
+</div>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+<!--Начало кода кнопки НАВЕРХ 
+<script language="JavaScript" type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+<script language="JavaScript" type="text/javascript">
+$(function() {
+	$.fn.scrollToTop = function() {
+		$(this).hide().removeAttr("href");
+		if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+		var scrollDiv = $(this);
+		$(window).scroll(function() {
+			if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+			else $(scrollDiv).fadeIn("slow")
+			});
+		$(this).click(function() {
+		$("html, body").animate({scrollTop: 0}, "slow")
+			})
+		}
+	});
+$(function() {
+$("#Go_Top").scrollToTop();
+});
+</script>
+<a style='position: fixed; bottom: 25px; right: 1px; cursor:pointer; display:none;' href='#' id='Go_Top'><img src="/images/up.png" alt="Наверх" title="Наверх"> </a>
+<!--Конец кода кнопки НАВЕРХ -->
+</body>
+</html>
+
